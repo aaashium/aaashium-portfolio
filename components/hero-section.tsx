@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Shield, Terminal, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export function HeroSection() {
+export function Section() {
   const [typedText, setTypedText] = useState("");
   const fullText = "Securing digital frontiers";
 

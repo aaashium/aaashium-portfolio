@@ -7,7 +7,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Cyber Security Expert | Portfolio',
+  title: 'Aashish Kumar Yadav Cyber Security Expert | Portfolio',
   description: 'Cyber security professional specializing in penetration testing, vulnerability assessment, and secure systems architecture',
   generator: 'v0.app',
   icons: {
