@@ -44,7 +44,7 @@ export function HeroSection() {
 
         {/* Main heading */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-          <span className="text-foreground">Alex Chen</span>
+          <span className="text-foreground">Aashish Kumar Yadav</span>
           <br />
           <span className="text-primary">Cyber Security</span>
           <br />
