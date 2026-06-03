@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Shield, Terminal, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function HeroSection() {
   const [typedText, setTypedText] = useState("");
@@ -30,7 +31,31 @@ export function HeroSection() {
       {/* Background grid effect */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,170,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,170,0.03)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none" />
 
-      <div className="relative z-10 max-w-4xl">
+      <div className="relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        {/* Profile Photo with premium styling */}
+        <div className="relative flex-shrink-0 order-first lg:order-last">
+          {/* Outer glow ring */}
+          <div className="absolute -inset-1 bg-gradient-to-r from-primary via-primary/50 to-primary rounded-full blur-md opacity-75 animate-pulse" />
+          {/* Inner border */}
+          <div className="relative p-1 bg-gradient-to-br from-primary via-primary/30 to-primary rounded-full">
+            <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-background">
+              <Image
+                src="/images/profile.jpg"
+                alt="Aashish Kumar Yadav - Cyber Security Expert"
+                fill
+                className="object-cover"
+                priority
+              />
+              {/* Subtle overlay for cohesion */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
+            </div>
+          </div>
+          {/* Decorative elements */}
+          <div className="absolute -top-2 -right-2 w-6 h-6 border-2 border-primary rounded-full bg-background" />
+          <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-primary rounded-full" />
+        </div>
+
+        <div className="max-w-4xl text-center lg:text-left">
         {/* Status indicator */}
         <div className="flex items-center gap-2 mb-8">
           <span className="relative flex h-3 w-3">
@@ -86,6 +111,7 @@ export function HeroSection() {
           >
             <a href="#contact">Get in Touch</a>
           </Button>
+        </div>
         </div>
       </div>
 
