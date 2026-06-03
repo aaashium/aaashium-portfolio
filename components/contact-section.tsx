@@ -1,12 +1,13 @@
 "use client";
 
-import { Mail, Github, Linkedin, Instagram } from "lucide-react";
+import { Mail, Github, Linkedin, Instagram, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const socialLinks = [
   { icon: Github, href: "#", label: "GitHub" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
   { icon: Instagram, href: "https://instagram.com/aaashium", label: "Instagram" },
+  { icon: Twitter, href: "https://twitter.com/aaashium", label: "Twitter" },
 ];
 
 export function ContactSection() {
