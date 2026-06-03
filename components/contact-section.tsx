@@ -31,9 +31,9 @@ export function ContactSection() {
           className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono mb-12"
           asChild
         >
-          <a href="mailto:hello@alexchen.security">
+          <a href="mailto:ashish.y2537@gmail.com">
             <Mail className="mr-2 h-5 w-5" />
-            hello@alexchen.security
+            ashish.y2537@gmail.com
           </a>
         </Button>
 
